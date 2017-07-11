@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="Assets/CSS/reset.css">
+<link rel="stylesheet" href="Assets/CSS/style.css">
+
+	<title>Jedi Collector</title>
+</head>
+<body>
+
+<!-- container set to 100% width so everything inside is same width and to look more like the picture -->
+<div class="container">
+<!-- this is the header / jumbotron -->
+  
+	
+  <div class="jumbotron" id="header">
+    <h1>Jedi Collector</h1> 
+  </div>
+      
+	<!-- instructionsTitle id is for creating the header inside the div section -->
+ <!-- row 1. instructions -->
+ <div class="row">  
+ 	<div class="col-md-12">
+ 	  <div class="panel panel-default">
+ 	    <div class=" panel-heading">Instructions</div>     
+       <div class="panel-body">The force will provide you with a random number at the start of the game.There are four members of the dark side below. Each one will add a specific amount of points to your total score. You win the game by matching your score to "Total Score" which is selected at random. You lose the game if your total score goes above that number. The value of member of the dark side is hidden from you until you click on him. The values will change at the start of eacn new game. May the force be with you.
+       </div>
+       </div>
+    </div>
+ </div>
+
+ <div class="row">  
+ 	<div class="col-md-3">
+  <!-- this is the target score box -->
+ 	  <div class="panel panel-default">
+ 	    <div class=" panel-heading">Target Score </div>     
+       <div id="numberGuess" class="panel-body">number
+       </div>
+       </div>
+    </div>
+    <div class="col-md-3">
+    <!-- this is your score box -->
+    <div class="panel panel-default">
+      <div class=" panel-heading">Your Score</div>     
+       <div id="myScore" class="panel-body">number</div>
+       </div>
+    </div>
+
+    <div class="col-md-6">
+ 	  <div class="panel panel-default">
+    <!-- this is the crystal selection box -->
+ 	    <div class=" panel-heading">Dark Side Selection</div>     
+       <div class="panel-body">
+       <img id="darthMaul" class="starWarsImage" src="Assets/Images/darthmaul.jpg"/>
+       <img id="darthvader" class="starWarsImage" src="Assets/Images/darthvader.jpg"/>
+       <img id="stormtrooper" class="starWarsImage" src="Assets/Images/stormtrooper.jpg"/>
+        <img id="bobafett" class="starWarsImage" src="Assets/Images/bobafett.jpg"/>
+       </div>
+       </div>
+    </div>
+ </div>
+ <div class="row">  
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class=" panel-heading" id="win">Win Count</div>     
+       <div class="panel-body">
+       </div>
+       </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class=" panel-heading" id="loss">Loss Count</div>     
+       <div class="panel-body">
+       </div>
+       </div>
+    </div>
+ </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<script src="assets/Javascript/jquery.easyaudioeffects.1.0.0.min.js"></script>
+<script type="text/javascript" src="assets/Javascript/game.js"></script>
+
+
+</body>
+</html>
